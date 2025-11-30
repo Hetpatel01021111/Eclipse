@@ -12,9 +12,9 @@ import { fileTransferManager } from './fileTransfer'
 // Eclipse Logo SVG Component
 function EclipseLogo() {
   return (
-    <svg className="logo" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M60 50 Q60 30 80 30 L120 30 Q140 30 140 50 L140 90 Q140 110 120 110 L100 110 L100 130 Q100 150 120 150 L140 150 Q160 150 160 170" 
-            stroke="#00a8ff" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <svg className="logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 25 L20 75 L70 75 L70 60 L35 60 L35 55 L65 55 L65 40 L35 40 L35 25 Z" 
+            fill="#ffffff" />
     </svg>
   )
 }
@@ -695,9 +695,9 @@ function Settings({ user, onBack, onProfile, onLogout, onPrivacy }) {
       {/* Footer */}
       <div style={{ textAlign: 'center', padding: '40px 20px', color: '#666' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginBottom: '8px' }}>
-          <svg width="24" height="24" viewBox="0 0 200 200" fill="none">
-            <path d="M60 50 Q60 30 80 30 L120 30 Q140 30 140 50 L140 90 Q140 110 120 110 L100 110 L100 130 Q100 150 120 150 L140 150 Q160 150 160 170" 
-                  stroke="#00a8ff" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+          <svg width="24" height="24" viewBox="0 0 100 100" fill="none">
+            <path d="M20 25 L20 75 L70 75 L70 60 L35 60 L35 55 L65 55 L65 40 L35 40 L35 25 Z" 
+                  fill="#00a8ff" />
           </svg>
           <span style={{ fontSize: '16px', letterSpacing: '2px' }}>
             <span style={{ color: '#fff' }}>ECLIPSE</span>
