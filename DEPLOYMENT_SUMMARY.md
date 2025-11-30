@@ -1,11 +1,11 @@
-# 🎉 Whisper Messenger - Deployment Summary
+# 🎉 Eclipse Messenger - Deployment Summary
 
 ## ✅ **Successfully Deployed!**
 
 ### 🌐 **Live URLs:**
 - **Frontend:** https://session-messenger.vercel.app
 - **Backend:** https://session-messenger-backend-production.up.railway.app
-- **GitHub:** https://github.com/Hetpatel01021111/Whisper
+- **GitHub:** https://github.com/Hetpatel01021111/Eclipse
 
 ---
 
@@ -40,7 +40,7 @@
 ## 📊 **Repository Structure:**
 
 ```
-Whisper/
+Eclipse/
 ├── README.md                    # Comprehensive documentation
 ├── LICENSE                      # MIT License
 ├── SECURITY_FEATURES.md        # Security details
@@ -159,7 +159,7 @@ Whisper/
 4. Start chatting securely
 
 ### **For Developers:**
-1. Clone: `git clone https://github.com/Hetpatel01021111/Whisper.git`
+1. Clone: `git clone https://github.com/Hetpatel01021111/Eclipse.git`
 2. Install: `npm install && cd web-app && npm install`
 3. Run: `npm run backend` + `npm run dev`
 4. Build: `npm run build`
@@ -187,7 +187,7 @@ Whisper/
 ## 📞 **Links:**
 
 - 🌐 **Live App:** https://session-messenger.vercel.app
-- 💻 **GitHub:** https://github.com/Hetpatel01021111/Whisper
+- 💻 **GitHub:** https://github.com/Hetpatel01021111/Eclipse
 - 📚 **Docs:** See README.md
 - 🐛 **Issues:** GitHub Issues
 - 💬 **Discussions:** GitHub Discussions
@@ -211,7 +211,7 @@ Whisper/
 
 ## 🚀 **Status: LIVE & READY!**
 
-The Whisper Messenger is now:
+The Eclipse Messenger is now:
 - ✅ Fully functional
 - ✅ Deployed to production
 - ✅ Open source on GitHub

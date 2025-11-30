@@ -9,8 +9,8 @@ import keyStorageAPI from './keyStorageAPI'
 import { privacyNetwork, sendPrivateMessage, onPrivateMessage } from './privacyNetwork'
 import { fileTransferManager } from './fileTransfer'
 
-// Whisper Logo SVG Component
-function WhisperLogo() {
+// Eclipse Logo SVG Component
+function EclipseLogo() {
   return (
     <svg className="logo" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M60 50 Q60 30 80 30 L120 30 Q140 30 140 50 L140 90 Q140 110 120 110 L100 110 L100 130 Q100 150 120 150 L140 150 Q160 150 160 170" 
@@ -23,10 +23,10 @@ function SignIn({ onNewAccount, onHaveKey }) {
   return (
     <div className="auth-container">
       <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-        <WhisperLogo />
-        <div className="logo-text">WHISPER</div>
+        <EclipseLogo />
+        <div className="logo-text">ECLIPSE</div>
       </div>
-      <h1 className="title">Welcome to Whisper</h1>
+      <h1 className="title">Welcome to Eclipse</h1>
       <p className="subtitle">Anonymous, decentralized messaging</p>
       
       <button onClick={onNewAccount} style={{ marginBottom: '16px' }}>
@@ -59,8 +59,8 @@ function CreateAccount({ onSuccess }) {
   return (
     <div className="auth-container">
       <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-        <WhisperLogo />
-        <div className="logo-text">WHISPER</div>
+        <EclipseLogo />
+        <div className="logo-text">ECLIPSE</div>
       </div>
       <h1 className="title">Create Account</h1>
       <p className="subtitle">Choose your display name</p>
@@ -84,7 +84,7 @@ function SaveKey({ accessKey, user, sessionToken, onContinue }) {
 
   const downloadKey = () => {
     const element = document.createElement('a')
-    const text = `WHISPER ACCOUNT RECOVERY KEY\n\nDisplay Name: ${user.displayName}\nAccess Key: ${accessKey}\n\nIMPORTANT:\n- This is your ONLY way to access your account\n- Keep this key safe and private\n- No password recovery is available\n- You will need this key to login\n\nCreated: ${new Date().toLocaleString()}`
+    const text = `ECLIPSE ACCOUNT RECOVERY KEY\n\nDisplay Name: ${user.displayName}\nAccess Key: ${accessKey}\n\nIMPORTANT:\n- This is your ONLY way to access your account\n- Keep this key safe and private\n- No password recovery is available\n- You will need this key to login\n\nCreated: ${new Date().toLocaleString()}`
     
     const file = new Blob([text], { type: 'text/plain' })
     const url = URL.createObjectURL(file)
@@ -202,7 +202,7 @@ function SaveKey({ accessKey, user, sessionToken, onContinue }) {
       </div>
 
       <button onClick={handleContinue} disabled={!downloaded || !confirmed}>
-        {!downloaded ? 'Download Key First' : !confirmed ? 'Confirm You Saved Key' : 'Continue to Whisper'}
+        {!downloaded ? 'Download Key First' : !confirmed ? 'Confirm You Saved Key' : 'Continue to Eclipse'}
       </button>
     </div>
   )
@@ -257,8 +257,8 @@ function Login({ onSuccess, onBack }) {
   return (
     <div className="auth-container">
       <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-        <WhisperLogo />
-        <div className="logo-text">WHISPER</div>
+        <EclipseLogo />
+        <div className="logo-text">ECLIPSE</div>
       </div>
       <h1 className="title">Enter Recovery Key</h1>
       <p className="subtitle">Enter your 32-digit access key to sign in</p>
@@ -311,7 +311,7 @@ function Home({ user, onProfile, onSettings, conversations = [], onSelectConvers
         >
           {getInitials(user.displayName)}
         </div>
-        <div className="header-title">WHISPER</div>
+        <div className="header-title">ECLIPSE</div>
         <div className="search-icon" onClick={onSettings}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="12" cy="12" r="3"/>
@@ -329,8 +329,8 @@ function Home({ user, onProfile, onSettings, conversations = [], onSelectConvers
         /* Empty State */
         <div className="empty-state">
           <div className="logo-container">
-            <WhisperLogo />
-            <div className="logo-text">WHISPER</div>
+            <EclipseLogo />
+            <div className="logo-text">ECLIPSE</div>
           </div>
           <h2 className="empty-title">You don't have any conversations yet</h2>
           <p className="empty-subtitle">
@@ -421,7 +421,7 @@ function IconBack() {
 }
 
 // SVG Icons for Settings
-function IconWhisperNetwork() {
+function IconEclipseNetwork() {
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
@@ -611,12 +611,12 @@ function Settings({ user, onBack, onProfile, onLogout, onPrivacy }) {
         <div style={{ width: '40px' }}></div>
       </div>
 
-      {/* First Section - Whisper Network */}
+      {/* First Section - Eclipse Network */}
       <div className="section-group" style={{ marginTop: '12px' }}>
         <div className="section-item" onClick={onProfile}>
-          <span className="settings-icon"><IconWhisperNetwork /></span>
+          <span className="settings-icon"><IconEclipseNetwork /></span>
           <div style={{ flex: 1 }}>
-            <div className="card-title">Whisper Network</div>
+            <div className="card-title">Eclipse Network</div>
           </div>
           <span style={{ color: '#666', fontSize: '20px' }}>›</span>
         </div>
@@ -700,7 +700,7 @@ function Settings({ user, onBack, onProfile, onLogout, onPrivacy }) {
                   stroke="#00a8ff" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
           </svg>
           <span style={{ fontSize: '16px', letterSpacing: '2px' }}>
-            <span style={{ color: '#fff' }}>WHISPER</span>
+            <span style={{ color: '#fff' }}>ECLIPSE</span>
             <span style={{ color: '#666' }}>TOKEN</span>
           </span>
         </div>
@@ -750,8 +750,8 @@ function LockScreen({ onUnlock }) {
   return (
     <div className="lock-screen">
       <div className="lock-content">
-        <WhisperLogo />
-        <div className="logo-text" style={{ marginBottom: '40px' }}>WHISPER</div>
+        <EclipseLogo />
+        <div className="logo-text" style={{ marginBottom: '40px' }}>ECLIPSE</div>
         
         <div style={{ textAlign: 'center', marginBottom: '40px' }}>
           <div style={{ fontSize: '48px', marginBottom: '20px' }}>🔒</div>
@@ -844,7 +844,7 @@ function Privacy({ onBack }) {
         <div className="section-item" onClick={() => toggleSetting('lockApp')}>
           <div style={{ flex: 1 }}>
             <div className="card-title">Lock App</div>
-            <div className="card-subtitle">Require fingerprint, PIN, pattern or password to unlock Whisper.</div>
+            <div className="card-subtitle">Require fingerprint, PIN, pattern or password to unlock Eclipse.</div>
           </div>
           <div className={`toggle ${settings.lockApp ? 'toggle-on' : ''}`}>
             <div className="toggle-knob"></div>
@@ -1225,7 +1225,7 @@ function cleanupExpiredMessages(messages) {
 export default function App() {
   const [screen, setScreen] = useState('signin')
   const [accessKey, setAccessKey] = useState(null)
-  const [sessionToken, setWhisperToken] = useState(null)
+  const [sessionToken, setEclipseToken] = useState(null)
   const [user, setUser] = useState(null)
   const [conversations, setConversations] = useState([])
   const [messages, setMessages] = useState({})
@@ -1622,7 +1622,7 @@ export default function App() {
       onSuccess={(key, u, token) => { 
         setAccessKey(key)
         setUser(u)
-        setWhisperToken(token)
+        setEclipseToken(token)
         setScreen('saveKey')
       }}
     />
@@ -1717,7 +1717,7 @@ export default function App() {
             <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#3b4a54" strokeWidth="0.5" style={{ margin: '0 auto 24px', display: 'block', opacity: 0.6 }}>
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
             </svg>
-            <h2 style={{ color: '#e9edef', marginBottom: '16px', fontSize: '32px', fontWeight: '300' }}>Whisper Messenger</h2>
+            <h2 style={{ color: '#e9edef', marginBottom: '16px', fontSize: '32px', fontWeight: '300' }}>Eclipse Messenger</h2>
             <p style={{ color: '#8696a0', fontSize: '14px', lineHeight: '20px', marginBottom: '24px' }}>
               Select a conversation to start messaging
             </p>

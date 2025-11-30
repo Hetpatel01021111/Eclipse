@@ -1,4 +1,4 @@
-# 🔐 Whisper Messenger
+# 🌑 Eclipse Messenger
 
 > **Military-grade encrypted messaging with maximum privacy and anonymity**
 
@@ -412,8 +412,8 @@ npm >= 9.0.0
 
 ### **Clone Repository**
 ```bash
-git clone https://github.com/Hetpatel01021111/Whisper.git
-cd Whisper
+git clone https://github.com/Hetpatel01021111/Eclipse.git
+cd Eclipse
 ```
 
 ### **Install Dependencies**
@@ -608,7 +608,7 @@ No Central Server!
 
 ## 🎯 **Comparison with Other Messengers**
 
-| Feature | Whisper | Signal | WhatsApp | Telegram |
+| Feature | Eclipse | Signal | WhatsApp | Telegram |
 |---------|---------|--------|----------|----------|
 | E2E Encryption | ✅ | ✅ | ✅ | ⚠️ Optional |
 | Perfect Forward Secrecy | ✅ | ✅ | ✅ | ❌ |
@@ -694,9 +694,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 **Support**
 
-- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/Hetpatel01021111/Whisper/issues)
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/Hetpatel01021111/Whisper/discussions)
-- 📧 **Email:** support@whisper-messenger.com
+- 🐛 **Bug Reports:** [GitHub Issues](https://github.com/Hetpatel01021111/Eclipse/issues)
+- 💬 **Discussions:** [GitHub Discussions](https://github.com/Hetpatel01021111/Eclipse/discussions)
+- 📧 **Email:** support@eclipse-messenger.com
 
 ---
 
@@ -733,7 +733,7 @@ This software is provided "as is" for educational and privacy purposes. While we
 
 ## 🌟 **Star History**
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Hetpatel01021111/Whisper&type=Date)](https://star-history.com/#Hetpatel01021111/Whisper&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Hetpatel01021111/Eclipse&type=Date)](https://star-history.com/#Hetpatel01021111/Eclipse&Date)
 
 ---
 
@@ -741,6 +741,6 @@ This software is provided "as is" for educational and privacy purposes. While we
 
 **Made with ❤️ for Privacy**
 
-[Website](https://session-messenger.vercel.app) • [Documentation](https://github.com/Hetpatel01021111/Whisper/wiki) • [Report Bug](https://github.com/Hetpatel01021111/Whisper/issues)
+[Website](https://session-messenger.vercel.app) • [Documentation](https://github.com/Hetpatel01021111/Eclipse/wiki) • [Report Bug](https://github.com/Hetpatel01021111/Eclipse/issues)
 
 </div>
