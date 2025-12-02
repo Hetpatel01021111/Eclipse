@@ -1,0 +1,12 @@
+{
+  "name": "Pre-Deployment Checklist",
+  "description": "Ensures all security and quality checks pass before deployment",
+  "trigger": {
+    "type": "manual",
+    "label": "🚀 Pre-Deploy Check"
+  },
+  "action": {
+    "type": "message",
+    "content": "Pre-Deployment Checklist:\n\n## Security\n- [ ] No hardcoded secrets or API keys\n- [ ] Environment variables properly configured\n- [ ] CORS settings correct for production\n- [ ] All encryption functions tested\n\n## Quality\n- [ ] No console.log statements in production code\n- [ ] Error handling implemented\n- [ ] Loading states for async operations\n\n## Performance\n- [ ] Bundle size optimized\n- [ ] Images compressed\n- [ ] Lazy loading implemented\n\n## Documentation\n- [ ] README updated\n- [ ] API documentation current\n- [ ] Environment variables documented"
+  }
+}

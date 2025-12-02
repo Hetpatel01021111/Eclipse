@@ -1,0 +1,12 @@
+{
+  "name": "Privacy Compliance Audit",
+  "description": "Ensures code maintains zero-knowledge architecture and privacy standards",
+  "trigger": {
+    "type": "onSave",
+    "filePattern": "**/*.{js,jsx}"
+  },
+  "action": {
+    "type": "message",
+    "content": "Privacy Audit Checklist:\n\n1. ✅ No plaintext messages sent over network\n2. ✅ No sensitive data in console.log statements\n3. ✅ Keys generated with cryptographically secure random\n4. ✅ Private keys never leave client device\n5. ✅ User data encrypted at rest\n6. ✅ Minimal metadata exposed to server\n7. ✅ No PII collection or storage\n\nReview the saved file for any privacy violations."
+  }
+}
